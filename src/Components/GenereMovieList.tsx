@@ -1,12 +1,10 @@
 import { IoChevronForwardSharp } from 'react-icons/io5'
 import GenresList from '../Constant/GenresList'
 import MovieList from './MovieList'
-import MovieListSkelton from './MovieListSkelton'
 
 function GenereMovieList() {
   return (
     <div className='mt-24 p-5 px-10 md:px-20 '>
-
       {GenresList.genere.map((item: any, index) => index <= 4 && (
         <div key={index}>
           <h2 className='text-white text-[20px] font-bold '>{item.name}
@@ -15,7 +13,6 @@ function GenereMovieList() {
           <MovieList genreId={item.id} />
         </div>
       ))}
-
     </div>
   )
 }
